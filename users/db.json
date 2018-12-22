@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "40",
+      "firstName": "Joshua",
+      "age": 34,
+      "companyId": "1"
+    },
+    {
+      "id": "11",
+      "firstName": "Brian",
+      "age": 28,
+      "companyId": "2"
+    },
+    {
+      "firstName": "Roberto",
+      "age": 30,
+      "id": "zcA5Eck",
+      "companyId": "2"
+    },
+    {
+      "firstName": "Brent",
+      "age": 22,
+      "companyId": "1",
+      "id": "lgzbzzt"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "description": "iPhone"
+    },
+    {
+      "id": "2",
+      "name": "Google",
+      "description": "Search"
+    }
+  ]
+}
