@@ -25,7 +25,7 @@ const UserType = new GraphQLObjectType({
     id: { type: GraphQLString },
     firstName: { type: GraphQLString },
     age: { type: GraphQLInt },
-    companyId: { 
+    company: { 
       type: CompanyType,
       resolve(parentValue, args){
        return axios.get(`http://localhost:3000/companies/${parentValue.companyId}`)
@@ -86,8 +86,8 @@ const mutation = new GraphQLObjectType({
       type: UserType,
       args: {
         id: { type: new GraphQLNonNull(GraphQLString) },
-        firstName: { type: new GraphQLNonNull(GraphQLString) },
-        age: { type: new GraphQLNonNull(GraphQLInt) },
+        firstName: { type: GraphQLString },
+        age: { type: GraphQLInt },
         companyId: { type: GraphQLString }
       },
       resolve(parentValue, { id, firstName, age, companyId }){
